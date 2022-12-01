@@ -70,5 +70,13 @@ namespace AOC22_Day1_1
         {
             return foundElves[i - 1];
         }
+
+        public int SumOfTopThree()
+        {
+            return foundElves
+                .OrderByDescending(elf => elf.TotalHeld())
+                .Take(3)
+                .Sum(elf => elf.TotalHeld());
+        }
     }
 }

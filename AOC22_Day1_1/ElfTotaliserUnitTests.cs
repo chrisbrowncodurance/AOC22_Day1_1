@@ -70,5 +70,13 @@ namespace AOC22_Day1_1
 
             Assert.Equal(1000, elfAt.TotalHeld());
         }
+
+        [Fact]
+        public void SumOfThree()
+        {
+            elfTotaliser = new ElfTotaliser(ExampleCalorieList);
+
+            Assert.Equal(45000, elfTotaliser.SumOfTopThree());
+        }
     }
 }

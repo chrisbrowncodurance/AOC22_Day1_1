@@ -13,6 +13,7 @@
             var elfWithMostCalories = elfTotaliser.ElfWithMostCalories();
 
             Assert.Equal(69626, elfWithMostCalories.TotalHeld());
+            Assert.Equal(206780, elfTotaliser.SumOfTopThree());
         }
     }
 }
